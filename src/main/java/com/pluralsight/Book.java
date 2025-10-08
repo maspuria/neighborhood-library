@@ -49,5 +49,36 @@ public class Book {
         this.isCheckedOut = false;
         this.checkedOutTo = "";
     }
+    // Display method
+    public void display() {
+        System.out.println("+------------------------------------------+");
+        System.out.println("| ID: " + id);
+        System.out.println("| Title: " + title);
+        System.out.println("| ISBN: " + isbn);
+        System.out.println("| Checked Out: " + (isCheckedOut ? "Yes" : "No"));
+        if (isCheckedOut) {
+            System.out.println("| Checked Out To: " + checkedOutTo);
+        }
+        System.out.println("+------------------------------------------+");
+    }
+    @Override
+    public String toString() {
+        String card = "+------------------------------------------+\n" +
+                "| ID: " + id + "\n" +
+                "| Title: " + title + "\n" +
+                "| ISBN: " + isbn + "\n" +
+                "| Checked Out: " + (isCheckedOut ? "Yes" : "No") + "\n";
+
+        if (isCheckedOut) {
+            card += "| Checked Out To: " + checkedOutTo + "\n";
+        }
+
+        card += "+------------------------------------------+";
+
+        return card;
+    }
+
+
+
 
 }
