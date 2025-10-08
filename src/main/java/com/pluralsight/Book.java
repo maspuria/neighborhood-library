@@ -8,4 +8,32 @@ public class Book {
         private boolean isCheckedOut;
         private String checkedOutTo;
 
+    // Constructor
+    public Book(int id, String isbn, String title) {
+        this.id = id;
+        this.isbn = isbn;
+        this.title = title;
+    }
+
+    // Getters
+    public int getId() {
+        return id;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public boolean isCheckedOut() {
+        return isCheckedOut;
+    }
+
+    public String getCheckedOutTo() {
+        return checkedOutTo;
+    }
+
 }
