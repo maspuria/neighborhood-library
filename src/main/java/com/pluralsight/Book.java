@@ -37,11 +37,13 @@ public class Book {
     }
     // checkOut(name) Method
     public void checkOut(String name){
-
+        this.isCheckedOut = true;
+        this.checkedOutTo = name;
     }
     // checkIn() Method
     public void checkIn(){
-
+        this.isCheckedOut = false;
+        this.checkedOutTo = "";
     }
 
 }
