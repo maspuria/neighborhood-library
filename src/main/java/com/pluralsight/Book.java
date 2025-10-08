@@ -35,5 +35,13 @@ public class Book {
     public String getCheckedOutTo() {
         return checkedOutTo;
     }
+    // checkOut(name) Method
+    public void checkOut(String name){
+
+    }
+    // checkIn() Method
+    public void checkIn(){
+
+    }
 
 }
